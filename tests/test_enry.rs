@@ -188,9 +188,9 @@ fn test_get_languages() {
 #[rstest]
 fn test_get_language_extensions() {
     const LANGUAGE: &str = "Python";
-    const EXTENSIONS: [&str; 18] = [
+    const EXTENSIONS: [&str; 17] = [
         ".py", ".cgi", ".fcgi", ".gyp", ".gypi", ".lmi", ".py3", ".pyde",
-        ".pyi", ".pyp", ".pyt", ".pyw", ".rpy", ".smk", ".spec", ".tac",
+        ".pyi", ".pyp", ".pyt", ".pyw", ".rpy", ".spec", ".tac",
         ".wsgi", ".xpy"
     ];
     assert_eq!(get_language_extensions(LANGUAGE).unwrap(), EXTENSIONS);
